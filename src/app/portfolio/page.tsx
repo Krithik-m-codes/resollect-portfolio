@@ -72,8 +72,8 @@ export default function PortfolioPage() {
                         key={tab.value}
                         onClick={() => handleTabChange(tab.value)}
                         className={`px-4 py-2 rounded-md text-sm font-medium ${activeTab === tab.value
-                                ? "bg-blue-600 text-white"
-                                : "bg-white text-black hover:bg-gray-200"
+                            ? "bg-blue-600 text-white"
+                            : "bg-white text-black hover:bg-gray-200"
                             }`}
                     >
                         {tab.label}
@@ -105,7 +105,15 @@ export default function PortfolioPage() {
             </div>
 
             {/* Selected count */}
-            <div className="mb-2 text-sm text-black w-full px-4 py-2 bg-white rounded-md shadow-sm">
+            <div className="mb-2 text-sm text-black w-full px-4 py-2 flex items-baseline justify-between bg-white rounded-md shadow-sm">
+                {/* on tab change display the filter tabs as a badge or component */}
+                <button
+                    key={activeTab}
+                    disabled
+                    className={"px-4 py-2 rounded-md text-sm font-medium bg-blue-600 text-white"}
+                >
+                    {activeTab}
+                </button>
                 {selectedRows.length} loans selected
             </div>
 

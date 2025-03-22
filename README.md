@@ -27,7 +27,7 @@ resollect-portfolio/
 │   ├── ui/                # shadcn UI components
 │   ├── layout/            # Layout components (sidebar, header)
 │   ├── portfolio/         # Portfolio-specific components
-│   └── common/            # Common/shared components
+│   └── upload-document/            # upload document components
 ├── types/                 # TypeScript interfaces
 ├── data/                  # Mock data
 └── lib/                   # Utility functions
@@ -52,7 +52,7 @@ cd resollect-portfolio
 2. Install dependencies
 
 ```bash
-npm install
+pnpm install
 # or
 yarn install
 ```
@@ -60,7 +60,7 @@ yarn install
 3. Run the development server
 
 ```bash
-npm run dev
+pnpm run dev
 # or
 yarn dev
 ```
