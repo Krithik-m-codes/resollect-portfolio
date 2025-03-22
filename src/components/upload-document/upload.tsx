@@ -103,7 +103,7 @@ export function UploadDocument({ open, onOpenChange }: UploadDocumentProps) {
                                 <Input
                                     id="file-upload"
                                     type="file"
-                                    className="hidden"
+                                    className=""
                                     onChange={handleFileChange}
                                 />
                             </label>
